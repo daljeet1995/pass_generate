@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Password Generator - Strong, Secure, Free</title>
+<meta name="description" content="Your best password generator - Generate random and strong enough password online.">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169206193-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169206193-1');
+</script>
+</head>
+<body class="body">
+<header class="header text-center">
+<h1 class="site-title">Strong password generator</h1>
+<small class="text-muted">Use this tool to generate with one click secure random password</small>
+</header>
+<main class="main container">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<div class="form-group">
+<label for="exampleInputEmail1">Generated Password</label>
+<div class="input-group">
+<input type="text" id="randomPassword" class="form-control form-control-lg" aria-describedby="crackTime" placeholder="Generated password" />
+<div class="input-group-append">
+<button type="button" id="copyButton" class="btn text-secondary" data-clipboard-target="#randomPassword" aria-label="Copy">
+<i class="fa fa-copy" style="font-size:36px;"></i>
+</button>
+</div>
+<div class="input-group-append">
+
+<button type="submit" form="generatePassword" class="btn text-primary btn-block" aria-label="Generate new Passowrd">
+<i class="fa fa-refresh" style="font-size:36px;"></i>
+</button>
+</div>
+</div>
+<small id="crackTime" class="form-text">It would take a computer about <strong id="time"></strong> to
+crack your password</small
+              >
+</div>
+</div>
+</div>
+</div>
+<form id="generatePassword" action="#" class="container-fluid">
+<div class="form-group row">
+<label class="col-3 col-form-label" for="randomPasswordLength">Length: <strong id="randomPasswordLengthLabel">14</strong></label
+          >
+<div class="col-9">
+<input type="range" class="form-control custom-range" min="0" max="56" step="1" value="14" id="randomPasswordLength" />
+</div>
+</div>
+<div class="form-group row">
+<div class="col-6 col-sm-3">
+<div class="form-check form-check-inline">
+<label class="custom-control fill-checkbox">
+<input checked type="checkbox" class="fill-control-input" value="lowercase" />
+<span class="fill-control-indicator"></span>
+<span class="fill-control-description">Lowercase</span>
+</label>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div class="form-check form-check-inline">
+<label class="custom-control fill-checkbox">
+<input checked type="checkbox" class="fill-control-input" value="uppercase" />
+<span class="fill-control-indicator"></span>
+<span class="fill-control-description">Uppercase</span>
+</label>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div class="form-check form-check-inline">
+<label class="custom-control fill-checkbox">
+<input checked type="checkbox" class="fill-control-input" value="numbers" />
+<span class="fill-control-indicator"></span>
+<span class="fill-control-description">Numbers</span>
+</label>
+</div>
+</div>
+<div class="col-6 col-sm-3">
+<div class="form-check form-check-inline">
+<label class="custom-control fill-checkbox">
+<input type="checkbox" class="fill-control-input" value="symbols" />
+<span class="fill-control-indicator"></span>
+<span class="fill-control-description">Symbols</span>
+</label>
+</div>
+</div>
+</div>
+</form>
+<code class="alert" id="alert"></code>
+</main>
+<footer class="footer">
+<div class="container">
+<h6 class="footer__copy">
+<a>Made by Deljit and Teg</a>
+</h6>
+</div>
+</footer>
+<script type="text/javascript" src="js/hsimp.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script>
+<script type="text/javascript" src="js/main.js" defer></script>
+</body>
+</html>
